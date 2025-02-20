@@ -12,7 +12,6 @@ Para enviar e-mails usando o Gmail, é necessário gerar uma senha de aplicativo
 3. Selecione **Outro**, dê um nome ao app e clique em **Gerar**
 4. Existe a opção de digitar **senhas app** na busca para ser direcionado a página
 
----
 
 ## ⚙ Configuração no Spring Boot
 
@@ -36,8 +35,6 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 </dependency>
 ```
 
----
-
 ## ✉ Criando DTO para E-mail
 
 ```java
@@ -55,8 +52,6 @@ public class EmailDTO {
     // Construtor, Getters e Setters
 }
 ```
-
----
 
 ## 🛠 Implementação do Service de E-mail
 
@@ -113,7 +108,6 @@ email.password-recover.token.minutes=${PASSWORD_RECOVER_TOKEN_MINUTES:30}
 email.password-recover.uri=${PASSWORD_RECOVER_URI:http://localhost:5173/recover-password/}
 ```
 
----
 
 ## 🏛 Criando a Entidade para Recuperação de Senha
 
@@ -137,8 +131,6 @@ public class PasswordRecover {
     // Construtor, Getters e Setters
 }
 ```
-
----
 
 ## 📌 DTOs
 
@@ -169,7 +161,6 @@ public class EmailMinDTO {
 }
 ```
 
----
 
 ## 🌍 Implementação do Controller
 
@@ -197,8 +188,6 @@ public class AuthController {
     }
 }
 ```
-
----
 
 ## 🛠 Implementação do Service
 
@@ -243,8 +232,6 @@ public class AuthService {
     }
 }
 ```
-
----
 
 ## 🔍 Implementação do Repositório
 
